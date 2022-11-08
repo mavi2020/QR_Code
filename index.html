@@ -43,29 +43,20 @@
       background-color: var(--light-gray);
     }
 
-    img {
-      border-radius: 10px;
-      max-width: 100%;
-    }
-
     h1 {
       font-family: var(--font-family);
       font-weight: var(--f-weight-700);
-      color: var(--dark-blue);
-      padding-left: 30px;
-      padding-right: 30px;
-      text-align: center;
     }
 
     p {
       font-family: var(--font-family);
       font-size: var(--font-size-p);
       color: var(--grayish-blue);
-      margin: 0;
-      padding-bottom: 30px;
-      padding-left: 30px;
-      padding-right: 30px;
-      text-align: center;
+    }
+
+    .px-8 {
+      padding-left: 8px;
+      padding-right: 8px;
     }
 
     .container {
@@ -77,12 +68,33 @@
       background-color: white;
       margin: auto;
       border-radius: 10px;
+    }
+
+    .qr {
       padding: 10px;
+
+    }
+
+    .qr img {
+      border-radius: 10px;
+      max-width: 100%;
+
+    }
+
+    .details {
+      padding-left: 35px;
+      padding-right: 35px;
+      text-align: center;
+    }
+
+    .details p {
+      margin: 0;
+      padding-bottom: 30px;
     }
 
     @media (min-width:375px) {
       h1 {
-        font-size: 1.6em;
+        padding-top: 1.6em;
       }
 
       p {
@@ -91,9 +103,8 @@
         margin: 0
       }
     }
-
     @media (min-width:1400px) {
-      h1 {
+      h1{
         font-size: 24px;
       }
     }
@@ -102,19 +113,25 @@
 
 <body>
   <main>
-    <section class="container">
-      <img src="images/image-qr-code.png" alt="QR Code Image">
-      <h1>Improve your front-end skills by building projects</h1>
-      <p> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-      </p>
+    <section>
+      <div class="container">
+        <div class="qr">
+          <img src="images/image-qr-code.png" alt="QR Code Image">
+        </div>
+        <div class="details">
+          <h1>
+            Improve your front-end skills by building projects
+          </h1>
+          <p class="px-8"> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+          </p>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/develoba">DeveLoba</a>.
+      </div>
     </section>
   </main>
-  <footer style="background-color:cornflowerblue; color: white; height:32px;text-align: center;margin: 8px;">
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/develoba">DeveLoba</a>.
-    </div>
-  </footer>
 </body>
 
 </html>
